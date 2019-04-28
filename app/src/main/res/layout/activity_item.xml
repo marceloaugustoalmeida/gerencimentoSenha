@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/tml_default_margin_4_dp"
+    android:layout_marginRight="@dimen/tml_default_margin_4_dp"
+    android:layout_marginBottom="@dimen/tml_default_margin_8_dp"
+    card_view:cardCornerRadius="@dimen/tml_card_corner_radius_6_dp"
+    card_view:cardElevation="@dimen/tml_default_margin_1_dp">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/ll_information"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/tml_default_margin_8_dp"
+            android:layout_marginStart="@dimen/tml_default_margin_8_dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/urlSite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tml_default_margin_4_dp"
+                android:text="www.google.com.br"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/tml_text_size_14_sp" />
+
+            <TextView
+                android:id="@+id/emailUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tml_default_margin_8_dp"
+                android:layout_marginBottom="@dimen/tml_default_margin_8_dp"
+                android:text="Email do usuário"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/tml_text_size_14_sp" />
+
+            <TextView
+                android:id="@+id/senhaUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tml_default_margin_8_dp"
+                android:layout_marginBottom="@dimen/tml_default_margin_8_dp"
+                android:text="senhaaaaa"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/tml_text_size_14_sp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.172" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1.0" />
+
+
+        <ImageView
+            android:id="@+id/iconeSite"
+            android:layout_width="63dp"
+            android:layout_height="57dp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:gravity="center"
+            android:importantForAccessibility="no"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:src="@drawable/ic_launcher_background"
+            android:text="Imagem"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/tml_text_size_24_sp"
+            app:layout_constraintEnd_toStartOf="@+id/ll_information"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroUsuario">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/tml_default_margin_10_dp"
+        android:contentDescription="@string/contentDescriptionLogo"
+        android:src="@drawable/logo_cedro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/tml_default_margin_10_dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/view_border"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo">
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tml_default_margin_10_dp"
+            android:ems="50"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+            android:focusable="true"
+            android:contentDescription="@string/contentDescriptionCampoNome"
+            android:text="Marcelo Almeida"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tml_default_margin_10_dp"
+            android:ems="50"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtNome"
+            android:contentDescription="@string/contentDescriptionCampoEmail"
+            android:text=""
+            />
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tml_default_margin_10_dp"
+            android:ems="20"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmail"
+            android:contentDescription="@string/contentDescriptionCampoSenha"
+            android:text=""/>
+
+        <Button
+            android:id="@+id/btnCadastrarUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_margin="@dimen/tml_default_margin_10_dp"
+            android:layout_weight="0"
+            android:background="@drawable/botao_cadastrar"
+            android:contentDescription="@string/contentDescriptionBotaoCadastrar"
+            android:text="@string/contentBotaoCadastrar"
+            android:textAllCaps="false"
+            android:textColor="@color/tml_white_ffffff"
+            android:textSize="@dimen/tml_text_size_16_sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtSenha" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tml_default_margin_24_dp"
+        android:background="@color/tml_white_ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contentPreenchaDados" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

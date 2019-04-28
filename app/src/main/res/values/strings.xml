@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Gerenciamento Senha</string>
+    <string name="contentDescriptionLogo">Logo da empresa</string>
+    <string name="contentDescriptionCampoNome">Digite o nome do usuário</string>
+    <string name="contentDescriptionUrlSite">Digite a URL do site</string>
+    <string name="contentDescriptionCampoEmail">Digite o email do usuário</string>
+    <string name="contentDescriptionCampoUsuario">Digite o usuário do site</string>
+    <string name="contentDescriptionCampoSenha">Digite a senha do usuário</string>
+    <string name="contentDescriptionBotaoCadastrar">Clique no botão para cadastrar usuário</string>
+    <string name="contentDescriptionBotaoCadastrarSite">Clique no botão para cadastrar o site</string>
+    <string name="contentDescriptionLogin">Clique no botão para fazer o login</string>
+    <string name="contentBotaoCadastrar">Cadastrar</string>
+    <string name="contentPreenchaDados">Preencha os dados</string>
+    <string name="contentLogin">Login</string>
+    <string name="change">Alterar</string>
+    <string name="token">token</string>
+    <string name="usuario">usuario</string>
+    <string name="senha">senha</string>
+</resources>
